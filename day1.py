@@ -36,7 +36,7 @@ class Instagram:
             deleted_content=self.comment.pop()
             print("The last comment is deleted is",deleted_content)
         else:
-            print("NO comment is there")
+            print("NO comment is there to delete")
     
 
 
