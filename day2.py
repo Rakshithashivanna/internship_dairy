@@ -18,5 +18,5 @@ class IssuedBook(Book):
         
 
 
-obj=IssuedBook("Harry Potter and the Philosopher’s Stone","J.K. Rowling","03-02-2026","09:00 AM")
+obj=IssuedBook("Harry Potter and the Philosopher’s Stone","J.K. Rowling","student","03-02-2026")
 obj.display_book_details()
