@@ -1,9 +1,9 @@
 class father:
     def __init__(self,name,surname):
-        self.name=name
+        self.father_name=name
         self.surname=surname
     def display_father_name(self):
-        print(self.name)
+        print(self.father_name)
     def display_surname(self):
         print(self.surname)
 class son(father):
