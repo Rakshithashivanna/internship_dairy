@@ -1,13 +1,12 @@
 class InstagramAccount:
-    
- 
+    account_name="unknown"
     def __init__(self, account_name, password):
         self.account_name = account_name              
         self._private_reels = []                      
         self.__archived_reels = []                    
         self.__password = password                    
 
-
+    
    
     def add_private_reel(self, reel_name):
         self._private_reels.append(reel_name)
