@@ -29,7 +29,7 @@ p3 = PhonePe()
 p4 = CreditCard()
 
 
-p1.pay()
-p2.pay()
-p3.pay()
+# p1.pay()
+# p2.pay()
+# p3.pay()
 p4.pay()
