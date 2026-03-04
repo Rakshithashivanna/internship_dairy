@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculation History</title>
+</head>
+<body>
+
+    <h2>Last 5 Calculations</h2>
+
+    <table border="1">
+        <tr>
+            <th>Number 1</th>
+            <th>Number 2</th>
+            <th>Operation</th>
+            <th>Result</th>
+        </tr>
+
+        {% for item in history %}
+        <tr>
+            <td>{{ item.num1 }}</td>
+            <td>{{ item.num2 }}</td>
+            <td>{{ item.operation }}</td>
+            <td>{{ item.result }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/">Back to Home</a>
+
+</body>
+</html>

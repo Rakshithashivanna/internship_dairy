@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+
+    <form action="/calculate" method="POST">
+        <label>Number 1:</label>
+        <input type="number" step="any" name="num1" required><br><br>
+
+        <label>Number 2:</label>
+        <input type="number" step="any" name="num2" required><br><br>
+
+        <label>Operation:</label>
+        <select name="operation">
+            <option>Add</option>
+            <option>Subtract</option>
+            <option>Multiply</option>
+            <option>Divide</option>
+        </select><br><br>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <br>
+    <a href="/history">View History</a>
+</body>
+</html>
