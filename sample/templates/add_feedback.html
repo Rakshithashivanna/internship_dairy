@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add Feedback</h2>
+
+<form method="POST" action="{{ url_for('add_feedback') }}">
+    
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+{% endblock %}
