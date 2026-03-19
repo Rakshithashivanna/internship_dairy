@@ -1,7 +1,8 @@
 def admin_only(dashboard):
     def wrapper(username):
         if username == "admin":
-            return dashboard(username)
+            print("Login successfully")
+            dashboard(username)
         else:
             print("Access Denied")
     return wrapper  
@@ -9,7 +10,7 @@ def admin_only(dashboard):
 
 @admin_only
 def dashboard(username):
-    print("Login successfully")
+    print("Welcome to the dashboard")
 
 
 dashboard("admin")
